@@ -1,3 +1,3 @@
 interface Shape {
-    
+    computeArea() : number;
 }
