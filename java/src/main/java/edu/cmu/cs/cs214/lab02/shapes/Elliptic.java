@@ -1,6 +1,6 @@
 package edu.cmu.cs.cs214.lab02.shapes;
 
-public class Elliptic implements Shape {
+public class Elliptic implements Shape_t {
     private int radA;
     private int radB;
 

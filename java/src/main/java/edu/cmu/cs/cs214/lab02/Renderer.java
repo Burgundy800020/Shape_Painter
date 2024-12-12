@@ -3,9 +3,9 @@ package edu.cmu.cs.cs214.lab02;
 import edu.cmu.cs.cs214.lab02.shapes.*;
 
 public class Renderer {
-    private Shape shape;
+    private Shape_t shape;
     
-    public Renderer(Shape shape) {
+    public Renderer(Shape_t shape) {
         this.shape = shape;
     }
 
