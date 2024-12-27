@@ -1,5 +1,7 @@
 package edu.cmu.cs.cs214.lab02.shapes;
 
+import java.awt.Graphics2D;
+
 public class Elliptic implements Shape_t {
     private int radA;
     private int radB;
@@ -23,5 +25,10 @@ public class Elliptic implements Shape_t {
 
     public int getVer(){
         return this.radB;
+    }
+
+    public boolean draw(Graphics2D g2d, int x, int y){
+        g2d.drawOval(x, y, getHor(), getVer());
+        return true;
     }
 }

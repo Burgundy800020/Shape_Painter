@@ -1,3 +1,5 @@
+package edu.cmu.cs.cs214.lab02;
+
 import java.lang.Override;
 import java.util.Scanner;
 import java.util.ArrayList;
@@ -31,17 +33,7 @@ public class ShapeRenderer extends JPanel {
         y = 10;
         for(int i=0;i<shapes.size();i++){
             Shape_t shape = shapes.get(i);
-            switch (shape.getType()) {
-                case RECTANGLE:
-                    g2d.drawRect(x, y, shape.getHor(), shape.getVer());
-                    break;
-                case ELLIPSE:
-                    g2d.drawOval(x, y, 2*shape.getHor(), 2*shape.getVer());
-                    break;
-                default:
-                    System.err.println ("Unknown shape type");
-                    break;
-            }
+            shape.draw(g2d, x, y);
             x += shape.getHor() + 10;
             if(x > getWidth()){
                 x = 10;
